@@ -30,23 +30,23 @@ namespace offsets {
     constexpr std::uint64_t ClassName = 0x8;
 
     // Scripts
-    constexpr std::uint64_t ModuleScriptEmbedded = 0x158; // 없데이트
-    constexpr std::uint64_t IsCoreScript = 0x190; // 없데이트
-    constexpr std::uint64_t ModuleFlags = IsCoreScript - 0x4; // 없데이트
-    constexpr std::uint64_t LocalScriptEmbedded = 0x1B0; // 없데이트
+    constexpr std::uint64_t ModuleScriptEmbedded = 0x138;
+    constexpr std::uint64_t ModuleFlags = 0x148;
+    constexpr std::uint64_t IsCoreScript = ModuleFlags + 0x4;
+    constexpr std::uint64_t LocalScriptEmbedded = 0x190;
 
     constexpr std::uint64_t Bytecode = 0x10;
     constexpr std::uint64_t BytecodeSize = 0x28;
 
     // Other
-    constexpr std::uint64_t LocalPlayer = 0x120; // 0x100
-    constexpr std::uint64_t ObjectValue = 0xa8;
+    constexpr std::uint64_t LocalPlayer = 0x130; // 0x100
+    constexpr std::uint64_t ObjectValue = 0xb8;
 
     // Datamodel
-    constexpr std::uint64_t FakeDatamodelPointer = 0x8ee1728;
+    constexpr std::uint64_t FakeDatamodelPointer = 0x8e42c98;
     constexpr std::uint64_t FakeToRealDatamodel = 0x1f8;
 
-    constexpr std::uint64_t EnableLoadModule = 0x85c4e80;
+    constexpr std::uint64_t EnableLoadModule = 0x8515b38;
 }
 
 const std::string_view Xeno_Version = "1.0.8";
