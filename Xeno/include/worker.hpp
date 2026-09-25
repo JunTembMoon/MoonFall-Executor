@@ -22,31 +22,31 @@
 namespace offsets {
     // Instance
     constexpr std::uint64_t This = 0x8;
-    constexpr std::uint64_t Name = 0x88; // 0x48
-    constexpr std::uint64_t Children = 0x68; // 0x50
-    constexpr std::uint64_t Parent = 0x58; // 0x60
+    constexpr std::uint64_t Name = 0x8; // 0x48
+    constexpr std::uint64_t Children = 0x78; // 0x50
+    constexpr std::uint64_t Parent = 0x68; // 0x60
 
     constexpr std::uint64_t ClassDescriptor = 0x18;
     constexpr std::uint64_t ClassName = 0x8;
 
     // Scripts
-    constexpr std::uint64_t ModuleScriptEmbedded = 0x158;
-    constexpr std::uint64_t IsCoreScript = 0x190;
-    constexpr std::uint64_t ModuleFlags = IsCoreScript - 0x4;
-    constexpr std::uint64_t LocalScriptEmbedded = 0x1B0;
+    constexpr std::uint64_t ModuleScriptEmbedded = 0x158; // 없데이트
+    constexpr std::uint64_t IsCoreScript = 0x190; // 없데이트
+    constexpr std::uint64_t ModuleFlags = IsCoreScript - 0x4; // 없데이트
+    constexpr std::uint64_t LocalScriptEmbedded = 0x1B0; // 없데이트
 
     constexpr std::uint64_t Bytecode = 0x10;
-    constexpr std::uint64_t BytecodeSize = 0x20;
+    constexpr std::uint64_t BytecodeSize = 0x28;
 
     // Other
-    constexpr std::uint64_t LocalPlayer = 0x128; // 0x100
-    constexpr std::uint64_t ObjectValue = 0xD8;
+    constexpr std::uint64_t LocalPlayer = 0x120; // 0x100
+    constexpr std::uint64_t ObjectValue = 0xa8;
 
     // Datamodel
-    constexpr std::uint64_t FakeDatamodelPointer = 0x7097018;
-    constexpr std::uint64_t FakeToRealDatamodel = 0x1C0;
+    constexpr std::uint64_t FakeDatamodelPointer = 0x8ee1728;
+    constexpr std::uint64_t FakeToRealDatamodel = 0x1f8;
 
-    constexpr std::uint64_t EnableLoadModule = 0x5F0EEF0;
+    constexpr std::uint64_t EnableLoadModule = 0x85c4e80;
 }
 
 const std::string_view Xeno_Version = "1.0.8";
